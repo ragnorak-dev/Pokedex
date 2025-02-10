@@ -65,7 +65,9 @@ fun PokemonHunterView(
                 searchAction = { handleIntent(PokemonHunterIntent.SearchPokemon) })
         }
 
-        else -> {}
+        else -> {
+            "test to IA review pull requests via make"
+        }
     }
 }
 
