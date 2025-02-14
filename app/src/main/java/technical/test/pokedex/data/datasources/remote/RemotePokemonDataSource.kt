@@ -14,6 +14,7 @@ class RemotePokemonDataSource @Inject constructor(private val apiInterface: ApiI
             val response = apiInterface.fetchPokemon(pokemonId = pokemonId)
             Result.success(response)
         } catch (e: HttpException) {
+            "test de IA"
             Result.failure(e)
         } catch (e: IllegalArgumentException) {
             Result.failure(e)
